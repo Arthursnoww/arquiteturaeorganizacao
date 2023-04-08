@@ -1,4 +1,4 @@
-# ATIVIDADE DO CAPITULO 1 #
+# EXERCÍCIO DO CAPITULO 1 #
 
 01.	  a. Correta
 
