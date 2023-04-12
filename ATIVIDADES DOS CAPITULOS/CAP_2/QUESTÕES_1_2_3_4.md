@@ -1,127 +1,44 @@
-01.
+# EXERCÍCIO DO CAPITULO 2 #
 
-a) Incorreta, não precisa do ", 1"
+**QUESTÃO-1**
 
-b) Correto
-
-c) Incorreta, não é possivel somar dados da memória com dados da memória
-
-d) Correto
-
-e) incorreta, é necessário colocar o valor de number num registrador para realizar a operação
-
-f) Correto
-
-02.
-
-a)
-
-    mov eax, 3
-    imul number
-    mov product, eax
-   
-b) 
-
-    mov eax, number
-     mov ebx amount
-     xor edx, edx
-     div ebx
-     mov result, edx
-   
-  c)
-  
-    mov eax, number
-     mov ebx, 2
-     cdq
-     idiv ebx
-     mov answer, eax
-
-d)
-
-      mov eax, 4
-      sub eax, number
-      mov difference, eax
+A. Correto
+ 	
+   B. Incorreto, Quebra linha tem que ser em notação hexadecimal
     
-03.
-a) 
+   C. incorreto, ADDR é usado para adicionar cadeias de Caracteres no Printf, Number é o inteiro a ser exibido.
+    
+   D. Correto
+    
+   E. Incorreto, \n em assembly é utilizado em hexadecimal: 0Ah
+   
+   
+    
+**QUESTÃO-2**
 
-    mov eax, x
-     imul y
-     mov ecx, eax
-     mov eax, z
-     mov ebx, 2
-     imul ebx
-     add ecx, eax
-     mov x, ecx
+A diretiva INVOKE invoca a função, como um subprograma, limpando os registradores eax, ecx e edx para utilizá-los na
 
-b) mov eax, b
-   sub eax, c
-   mov ebx, 3
-   cdq
-   idiv ebx
-   mov a, eax
-   
-c) mov eax, num3
-   imul num4
-   mov ebx, eax
-   mov eax, num1
-   cdq
-   idiv num2
-   sub eax, ebx
-   mov total, eax
-   
-d) mov eax, s
-   neg eax
-   mov ebx, t
-   add ebx, 1
-   add eax, ebx
-   mov r, eax
-   mov t, ebx
+passagem de parâmetros. Logo, o ideal seria atribuir valor a num2 depois do INVOKE, Por exemplo:
+        
+        INVOKE printf, ADDR msg1fmt, ADDR msg1, num2
+	    mov num2, 5
+      
+**QUESTÃO-3**
 
-e) mov eax, i
-   sub eax, j
-   imul eax, k
-   mov ebx, n
-   imul ebx, eax
-   mov m, eax
-   
-f) mov eax, a
-   sub eax, b
-   mov ebx, c
-   mov edx, d
-   idiv edx
-   imul eax, e
-   add eax, ebx
-   mov q, eax
-   
-04.
-a) dec i
+    
+          xb=b1byb=b2
+          linha em branco
+          linha em branco
+          z=3
+    
+**QUESTÃO-4**
 
-b) mov eax, k
-   add eax, 1
-   mov k, eax
-   mov ebx, m
-   sub eax, ebx
-   mov j, eax
-   
-c) mov eax, x
-   add eax, y
-   neg eax
-   mov z, eax
-  
-d) mov eax, b
-   add eax, 1
-   mov b, eax
-   mov ebx, c
-   add ebx 1
-   mov c, ebx
-   sub eax, ebx
-   mov a, eax
-   
-e) mov ebx, z
-   dec ebx
-   mov z, ebx
-   mov eax, y
-   neg eax
-   add eax, ebx
-   mov x, eax
+ 
+        
+            (linha em branco)
+            TheBfirstBnumberBisB5,BbutBtheBsecondBnumberBisB7,B
+            (linha em branco)
+            whileBtheBthirdBnumberBisB11
+            (linha em branco)
+            (linha em branco)
+            
