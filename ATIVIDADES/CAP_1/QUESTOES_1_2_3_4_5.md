@@ -1,6 +1,10 @@
 # EXERCÍCIO DO CAPITULO 1 #
 
+> Correção: 1,9
+
 01.	  a. Correta
+
+> Correção: 0,4
 
 	    b. Incorreta
     
@@ -14,6 +18,8 @@
     
 
 02.	  a. 
+
+> Correção: 0,4
 
           initial byte ?
 
@@ -39,11 +45,12 @@
       
           number sdword -396
           
-          
-          
-    
 
-3. 	  A. incorreta (instrução 'move' invalida)
+3. 	 
+
+> Correção: 0,3
+
+ A. incorreta (instrução 'move' invalida)
 
 	    b. incorreta (tem que carregar o valor da variavel 'gato' pro eax)
     
@@ -54,13 +61,19 @@
 	    e. incorreta (não é possível mover um local para um valor)
     
 	    f. incorreta (a variável 'cavalo' naõ é registrador)
+
+> Corrreção: -eax não é válido.
     
 	    g. correto
     
 	    h. correto
     
 	
-4.	  A.
+4.	 
+
+> Correção: 0,4
+
+         a.
          
           mov i, 1
 
@@ -117,7 +130,11 @@
          
      
 
-5.	  A. 
+5.	
+
+> Correção: 0,4
+
+         a. 
 
           mov a, 'B'
 

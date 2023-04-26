@@ -2,10 +2,15 @@
 
 **QUESTÃO-1**
 
-A. Correto
+> Correção: 0,5
+
+
+   A. Correto
  	
    B. Incorreto, Quebra linha tem que ser em notação hexadecimal
-    
+
+> Correção: ADDR é usado para pegar o endereço.
+
    C. incorreto, ADDR é usado para adicionar cadeias de Caracteres no Printf, Number é o inteiro a ser exibido.
     
    D. Correto
@@ -16,6 +21,8 @@ A. Correto
     
 **QUESTÃO-2**
 
+> Correção: 0,5
+
 A diretiva INVOKE invoca a função, como um subprograma, limpando os registradores eax, ecx e edx para utilizá-los na
 
 passagem de parâmetros. Logo, o ideal seria atribuir valor a num2 depois do INVOKE, Por exemplo:
@@ -25,6 +32,8 @@ passagem de parâmetros. Logo, o ideal seria atribuir valor a num2 depois do INV
       
 **QUESTÃO-3**
 
+> Correção: 0,5
+
     
           xb=b1byb=b2
           linha em branco
@@ -33,7 +42,8 @@ passagem de parâmetros. Logo, o ideal seria atribuir valor a num2 depois do INV
     
 **QUESTÃO-4**
 
- 
+> Correção: 0,5
+
         
             (linha em branco)
             TheBfirstBnumberBisB5,BbutBtheBsecondBnumberBisB7,B

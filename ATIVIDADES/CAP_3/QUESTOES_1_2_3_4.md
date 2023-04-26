@@ -3,11 +3,15 @@
 
 **QUESTÃO-01**
 
+> Correção: 0,4
+
 a) Incorreta, não precisa do ", 1"
 
 b) Correto
 
 c) Incorreta, não é possivel somar dados da memória com dados da memória
+
+> Correção: _idiv_ só recebe registrador ou memória.
 
 d) Correto
 
@@ -19,12 +23,16 @@ f) Correto
 
 **QUESTÃO-02**
 
+> Correção: 0,4
+
 a)
 
     mov eax, 3
     imul number
     mov product, eax
-   
+
+> Correção: não vimos as instruções _xor_ e _div_ ainda.
+
 b) 
 
     mov eax, number
@@ -51,6 +59,8 @@ d)
 
 **QUESTÃO-03**
 
+> Correção: 0,3
+
 a) 
 
      mov eax, x
@@ -61,6 +71,8 @@ a)
      imul ebx
      add ecx, eax
      mov x, ecx
+
+> Correção: A divisão tem precedência maior. 
 
 b) 
   
@@ -92,6 +104,8 @@ d)
      mov r, eax
      mov t, ebx
 
+> Correção: _imul_ não tem dois operandos.
+
 e)
 
      mov eax, i
@@ -101,6 +115,10 @@ e)
      imul ebx, eax
      mov m, eax
    
+
+> Correção: _cqd_ antes de _idiv_.
+
+
 f) 
 
      mov eax, a
@@ -113,6 +131,8 @@ f)
      mov q, eax
    
 **QUESTÃO-04**
+
+> Correção: 0,5
 
 a) 
       
