@@ -77,11 +77,11 @@ D.
 
     if03:	cmp b, 2
             jne or03
-            cmp cc,3
+            cmp c,3
             jg  then03
     or03:	cmp a, 1
             jne  or02
-            cmp cc,3
+            cmp c,3
             jg  then03
             jle or04
     or02:	cmp b, 2
@@ -130,23 +130,24 @@ B.
     endif01:nop
     if02:	mov a, eax
             mov eax, b
-            cmp eax, cc
+            cmp eax, c
             jl if03
             sub eax, 2
             mov b, eax
     endif02:nop
     if03:	mov b, eax
-            mov eax, cc
+            mov eax, c
             cmp eax, d
             jle else04
             add eax, d
-            mov cc, eax
+            mov c, eax
     enfif03:nop
-    else04:	mov cc, eax
+    else04:	mov c, eax
             mov eax, d
             mov ebx, 2
             cdq
             idiv ebx
+            mov d, eax
     endif04:nop	
 
 
