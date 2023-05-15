@@ -16,6 +16,8 @@ b	sdword	?
 main	proc
         INVOKE printf, ADDR msg0fmt, ADDR msg1
         INVOKE scanf, ADDR in1fmt, ADDR n
+if01:	cmp n, 0
+	je endw01
         mov a, 0
         mov b, 1
         mov ebx, 2
