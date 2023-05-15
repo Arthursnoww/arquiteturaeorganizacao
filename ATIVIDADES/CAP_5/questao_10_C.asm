@@ -19,7 +19,6 @@ main	proc
 	.if n != 0
         .if n > 1
         mov a, 0
-        mov b, 1
         mov eax, a
         mov ecx, n
         sub ecx, 1
