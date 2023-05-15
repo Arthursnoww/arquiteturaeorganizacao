@@ -10,15 +10,13 @@ msg1fmt	byte "%d%s%d", 0Ah,0
 msg1	byte "digite o numero:",0
 msg2	byte " corresponde ao numero da sequencia Fibonacci ",0
 n	sdword	?
-a	sdword  ?
+a	sdword  0
 b	sdword	1
 	.code
 main	proc
         INVOKE printf, ADDR msg0fmt, ADDR msg1
         INVOKE scanf, ADDR in1fmt, ADDR n
         .if n != 0
-        mov a, 0
-        mov b, 1
         mov eax, a
         mov ecx, 2
         .repeat
