@@ -1,4 +1,4 @@
-		      .686
+	  .686
           .model  flat, c
           .stack  100h
 printf    PROTO   arg1:Ptr Byte, printlist:VARARG
@@ -15,9 +15,9 @@ msgtray   byte  "PAPER TRAY EMPTY", 0Ah, 0
 msglow    byte  "TONER LOW", 0Ah, 0    
 msgempty  byte  "TONER EMPTY", 0Ah, 0    
 dsb       dword ?
-main 	    proc
+main 	  proc
 	
-	  	    INVOKE printf, ADDR msg1fmt, ADDR msg1
+	  INVOKE printf, ADDR msg1fmt, ADDR msg1
           INVOKE scanf, ADDR in1fmt, ADDR dsb
           INVOKE printf, ADDR msg2fmt, ADDR msg2, dsb
           .while dsb <= 0ffh
@@ -42,7 +42,7 @@ main 	    proc
           INVOKE printf, ADDR msg1fmt, ADDR msglow
           .endif
 		
-	  	  test dsb, 00010000b
+	  test dsb, 00010000b
           .if !ZERO?
           INVOKE printf, ADDR msg1fmt, ADDR msgempty
           .endif
@@ -52,6 +52,6 @@ main 	    proc
           INVOKE printf, ADDR msg2fmt, ADDR msg2, dsb
           
           .endw
-	  	    ret
-main 	    endp
-	        end
+	  ret
+main 	  endp
+	  end
