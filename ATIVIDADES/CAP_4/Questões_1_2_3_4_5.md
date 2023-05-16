@@ -122,32 +122,32 @@ A.
 	.endif	
     
 B.
-
 	mov eax, a
 	if01:	cmp eax, b
-		jle if02
-		sub eax,1
-		mov a,eax
-	endif01:nop
-	if02:   mov eax,b
+		jg else01
+	then01:	nop
+	if02:	mov eax, b
 		cmp eax, c
-		jg  if03
-		sub eax,2
-		mov b,eax
-	endfi02:nop
-	if03:   mov eax,c
-		cmp eax,d
-		jle then01 
-		mov eax, c
-		add eax, d
-		mov c, eax
-		jmp endif03
-	endif03:nop
-	then01: mov eax, d
+		jge else02
+	then02:	nop
+	if03:	mov eax, c
+		cmp eax, d
+		jg else 03
+	then03:	mov eax, d
 		mov ebx, 2
 		cdq
 		idiv ebx
-		mov d, eax 
+		mov d, eax
+	else03:	add eax, d
+		mov c, eax
+	endif03:nop
+	else02:	sub eax, 2
+		mov b, eax
+	endif02:nop
+	else01:	sub eax, 1
+		mov a, eax
+	endif01:nop
+
 
 
 
