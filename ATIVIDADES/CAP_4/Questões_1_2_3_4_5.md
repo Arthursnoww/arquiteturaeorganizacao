@@ -141,9 +141,11 @@ B.
 		mov d, eax
 	else03:	add eax, d
 		mov c, eax
+		jmp endif01
 	endif03:nop
 	else02:	sub eax, 2
 		mov b, eax
+		jmp endif01
 	endif02:nop
 	else01:	sub eax, 1
 		mov a, eax
