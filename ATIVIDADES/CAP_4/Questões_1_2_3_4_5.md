@@ -123,33 +123,31 @@ A.
     
 B.
 
-    if01:	mov eax, a
-            cmp eax, b
-            jle if02
-            dec eax
-            mov a, eax
-    endif01:nop
-    if02:	mov a, eax
-            mov eax, b
-            cmp eax, c
-            jl if03
-            sub eax, 2
-            mov b, eax
-    endif02:nop
-    if03:	mov b, eax
-            mov eax, c
-            cmp eax, d
-            jle else04
-            add eax, d
-            mov c, eax
-    enfif03:nop
-    else04:	mov c, eax
-            mov eax, d
-            mov ebx, 2
-            cdq
-            idiv ebx
-            mov d, eax
-    endif04:nop	
+	mov eax, a
+	if01:	cmp eax, b
+		jle if02
+		sub eax,1
+		mov a,eax
+	endif01:nop
+	if02:   mov eax,b
+		cmp eax, c_
+		jg  if03
+		sub eax,c_
+		mov b,eax
+	endfi02:nop
+	if03:   mov eax,c_
+		cmp eax,d
+		jle then01 
+		mov eax, c_
+		add eax, d
+		mov c_, eax
+		jmp endif03
+	endif03:nop
+	then01: mov eax, d
+		mov ebx, 2
+		cdq
+		idiv ebx
+		mov d, eax 
 
 
 
