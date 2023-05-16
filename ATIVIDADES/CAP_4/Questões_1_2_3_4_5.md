@@ -97,29 +97,29 @@ D.
 
 A.
 
-mov eax, a
-.if eax <= b
-	mov eax, b
-	.if eax < c
-		mov eax, c
-		.if eax <= d
-			mov eax, d
-			mov ebx, 2
-			cdq
-			idiv ebx
-			mov d, eax
+	mov eax, a
+	.if eax <= b
+		mov eax, b
+		.if eax < c
+			mov eax, c
+			.if eax <= d
+				mov eax, d
+				mov ebx, 2
+				cdq
+				idiv ebx
+				mov d, eax
+			.else
+				add eax, d
+				mov c, eax
+			.endif
 		.else
-			add eax, d
-			mov c, eax
+			sub eax, 2
+			mov b, eax
 		.endif
 	.else
-		sub eax, 2
-		mov b, eax
-	.endif
-.else
-	dec eax
-	mov a, eax
-.endif	
+		dec eax
+		mov a, eax
+	.endif	
     
 B.
 
