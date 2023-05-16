@@ -15,6 +15,7 @@ msgtray   byte  "PAPER TRAY EMPTY", 0Ah, 0
 msglow    byte  "TONER LOW", 0Ah, 0    
 msgempty  byte  "TONER EMPTY", 0Ah, 0    
 dsb       dword ?
+	  .code
 main 	  proc
 	
 	  INVOKE printf, ADDR msg1fmt, ADDR msg1
