@@ -122,6 +122,7 @@ A.
 	.endif	
     
 B.
+
 	mov eax, a
 	if01:	cmp eax, b
 		jg else01
