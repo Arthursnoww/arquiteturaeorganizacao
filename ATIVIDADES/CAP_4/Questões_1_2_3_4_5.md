@@ -130,17 +130,17 @@ B.
 		mov a,eax
 	endif01:nop
 	if02:   mov eax,b
-		cmp eax, c_
+		cmp eax, c
 		jg  if03
-		sub eax,c_
+		sub eax,2
 		mov b,eax
 	endfi02:nop
-	if03:   mov eax,c_
+	if03:   mov eax,c
 		cmp eax,d
 		jle then01 
-		mov eax, c_
+		mov eax, c
 		add eax, d
-		mov c_, eax
+		mov c, eax
 		jmp endif03
 	endif03:nop
 	then01: mov eax, d
