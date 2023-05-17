@@ -2,12 +2,12 @@
         .model flat, c
         .stack 100h
 print   PROTO arg1:Ptr Byte, printlist:VARAG
-	      .data
+	.data
 msg1fmt byte 0Ah, "%d",0
 numero  sdword ?
 fatorial sdword ?
 i       sdword ?
-	      .code
+	.code
 main proc
         mov ebx, num
         mov i, 2
