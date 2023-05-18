@@ -32,5 +32,6 @@ main	proc
         .endif
         .endif
 	INVOKE printf, ADDR msg1fmt, n, ADDR msg2, b
+	ret
 main	endp
 	end
