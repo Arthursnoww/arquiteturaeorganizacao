@@ -32,5 +32,6 @@ while01:cmp ebx, n
         jmp while01
 endw01:	nop
 	INVOKE printf, ADDR msg1fmt, n, ADDR msg2, b
+	ret
 main	endp
 	end
