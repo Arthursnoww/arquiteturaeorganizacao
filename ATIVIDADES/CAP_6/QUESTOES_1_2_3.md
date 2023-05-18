@@ -1,8 +1,26 @@
-# EXERCICIO 06
+# EXERCÍCIO DO CAPÍTULO 6
 
-**questão-01**
+**QUESTÃO_01**
 
-**questão-02**
+a. correto
+
+b. correto
+      
+c. incorreto, 'rotate' não é uma instrução, use 'rol' ou 'ror'
+      
+d. correto
+      
+e. correto
+      
+f. incorreto, no 'xchg' pelo menos um valor tem que ta no registrador.
+      
+g. correto
+      
+h. incorreto, 'lol' instrução invalida
+      
+i. incorreto, para deslocamento utiliza-se 'shl' e 'shr'.
+      
+**QUESTÃO-02**
 
 a)
 
@@ -42,3 +60,20 @@ d)
      sar eax, 4
      sub eax, b
      mov a, eax
+
+
+**QUESTÃO-03**
+
+      .
+      .
+    push eax
+	push ebx
+	push ecx
+	push edx
+	pop eax
+	pop ebx
+	pop ecx
+	pop edx
+      .
+      .
+      .
