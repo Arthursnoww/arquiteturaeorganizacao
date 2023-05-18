@@ -16,8 +16,8 @@ msgunlock   byte  "GATE UNLOCK", 0Ah, 0
 msgdoor     byte  "DOOR OPEN", 0Ah, 0 
 msgwindow   byte  "WINDOR OPEN", 0Ah, 0  
 dsb         dword ?
-	          .code
-main 	      proc
+	    .code
+main 	    proc
             INVOKE printf, ADDR msg1fmt, ADDR msg1
             INVOKE scanf, ADDR in1fmt, ADDR dsb
             INVOKE printf, ADDR msg2fmt, ADDR msg2, dsb
@@ -63,5 +63,5 @@ endtest:    nop
             INVOKE printf, ADDR msg2fmt,ADDR msg2, dsb
             .endw 
             ret
-main 	      endp
-	          end
+main 	    endp
+	    end
