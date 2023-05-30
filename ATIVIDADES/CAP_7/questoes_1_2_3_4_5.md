@@ -2,7 +2,7 @@
 
 **QUESTÃO_1**
   a)
-  Incorrect, o correto seria ret ao inves de return
+  Incorreto, o correto seria ret ao inves de return
   b)
   Correto
   c)
