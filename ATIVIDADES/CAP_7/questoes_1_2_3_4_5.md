@@ -1,6 +1,24 @@
 # EXERCÍCIO DO CAPÍTULO 7 #
 
 **QUESTÃO_1**
+  a)
+  Incorrect, o correto seria ret ao inves de return
+  b)
+  Correto
+  c)
+  Incorreto, não é necessário o "." antes do if
+  d)
+  Correto
+  e)
+  Correto
+  f)
+  Incorreto, não existe elseif
+  g)
+  Correto
+  h)
+  Correto
+  i)
+  Incorreto, o certo seria ifnb
 
 **QUESTÃO_2**
 
