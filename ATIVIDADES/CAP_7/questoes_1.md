@@ -22,14 +22,3 @@
     i)
     Incorreto, o certo seria ifnb
 
-**QUESTÃO_2**
-
-**QUESTÃO_3**
-
-**QUESTÃO_4**
-
-**QUESTÃO_5**
-
-**QUESTÃO_6**
-
-**QUESTÃO_7**
