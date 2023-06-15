@@ -1,7 +1,10 @@
 # EXERCÍCIO 04
 
+> Correção: 1,5
 
 **QUESTÃO-1**
+
+> Correção: 0,3
 
 A. incorreto, mude '=' por '=='.
 
@@ -14,6 +17,8 @@ D. incorreto, 'cmp' não compara dois valores, um deles tem quer armazenado no r
 
 
 **QUESTÃO-2**
+
+> Correção: 0,3
 
     mov eax, a
     .if eax > b
@@ -39,6 +44,8 @@ D. incorreto, 'cmp' não compara dois valores, um deles tem quer armazenado no r
     .endif
 
 **QUESTÃO-3**
+
+> Correção: 0,3
 
 A. 
 
@@ -94,6 +101,8 @@ D.
 
 
 **QUESTÃO-4**
+
+> Correção: 0,3
 
 A.
 
@@ -155,6 +164,8 @@ B.
 
 
 **QUESTÃO-5**
+
+> Correção: 0,3
 
     switch01:   cmp number, 0
                 je case11;
