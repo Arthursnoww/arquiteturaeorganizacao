@@ -1,3 +1,4 @@
+ ; Correção: 1,0. Aqui você usou o scanf de forma correta.
         .686
         .model flat, c
 	.stack 100h

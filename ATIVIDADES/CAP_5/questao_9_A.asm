@@ -1,3 +1,4 @@
+ ; Correção: 0,8. Nós já aprendemos a utilizar o scanf. 
         .686
         .model flat, c
         .stack 100h
