@@ -1,3 +1,4 @@
+; Correção: 0,4. No caso de 0005 ser informado, ele deveria imprimir apenas Paper Jam, pois o bit 0 tem maior prioridade.
 	  .686
           .model  flat, c
           .stack  100h

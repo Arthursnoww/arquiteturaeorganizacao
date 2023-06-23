@@ -1,3 +1,4 @@
+; Correção: 0,5. Agora aqui está correto. Se informar 0009, apenas FIRE ALARM é impresso.
             .686
             .model  flat, c
             .stack  100h

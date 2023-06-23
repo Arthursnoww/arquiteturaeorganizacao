@@ -2,6 +2,8 @@
 
 **QUESTÃO_01**
 
+> Correção: 0,5
+
 a. correto
 
 b. correto
@@ -21,6 +23,8 @@ h. incorreto, 'lol' instrução invalida
 i. incorreto, para deslocamento utiliza-se 'shl' e 'shr'.
       
 **QUESTÃO-02**
+
+> Correção: 0,5
 
 a)
 
@@ -63,6 +67,8 @@ d)
 
 
 **QUESTÃO-03**
+
+> Correção: 0,5
 
       .
       .
