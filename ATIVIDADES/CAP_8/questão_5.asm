@@ -1,7 +1,3 @@
-;
-;   Building Instructions:
-;   ml /Cx /coff Array.asm /link /SUBSYSTEM:console  /out:Array.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
-;   
           .686
           .model  flat, c
           .stack  100h
@@ -18,21 +14,24 @@ msg3      byte    "Reversed", 0
 msg4      byte    "No data entered."
 n         sdword  ?
 i         sdword  20
-array1     sdword  20 dup (?) 
+array1     sdword  20 dup (?)
 array2     sdword  20 dup (?)
 
           .code
 main      proc
+
+
           INVOKE printf, ADDR msg1fmt, ADDR msg1
           mov ecx, 20
           mov ebx, 1
           .repeat
           push ecx      ; save ecx
-          INVOKE scanf, ADDR in1fmt, ADDR array1[ebx]
-          pop ecx       ; restore ecx
+          INVOKE scanf, ADDR in1fmt, ADDR array1[ebx] ; poderia declarar ja o vetor,  para nao perder tempo digitando os numeros na entrada,
+          pop ecx       ; restore ecx                             mas na ultima avaliação perdi ponto por não usar scanf 
           add ebx, 4
           .untilcxz
 
+          ;passar conteudo de uma array para outra
           mov ecx, 20
           mov ebx, 1
           .repeat
