@@ -1,5 +1,7 @@
 # EXERCÍCIO DO CAPÍTULO 7 #
 
+> Correção: 0,0. Não existe a diretiva de montagem condicional _elseif_.
+
 **QUESTÃO_1**
 
 

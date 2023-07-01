@@ -1,3 +1,4 @@
+; Correção: 1,0
             .686
             .model  flat, c
             .stack  100h
@@ -88,7 +89,7 @@ main        proc
             INACC
             ADDACC 5
             SUBACC 1
-            DIVACC 0
+            DIVACC 2
             STOREACC
             CALL OUTACC
             ret
