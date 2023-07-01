@@ -5,7 +5,7 @@
 
 ## 2° AVALIAÇÃO
 
-**NOTA:7,1 (até agr)**
+**NOTA: 9,5**
 
 ## 3° AVALIAÇÃO
 
