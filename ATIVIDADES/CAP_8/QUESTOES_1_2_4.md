@@ -1,5 +1,6 @@
 # EXERCÍCIO DO CAPITULO 8
 
+> Correção: 0,5
 
 *QUESTÃO-01*
 
@@ -17,6 +18,8 @@ e) incorreto, é necessário usar 'eax' .
 
 
 *QUESTÃO-02*
+
+> Correção: 0,5
 
   B)  
   
@@ -43,6 +46,8 @@ e) incorreto, é necessário usar 'eax' .
 Estão em Arquivos .asm
 
 *QUESTÃO-04*
+
+> Correção: 0,5
 
 C)  
 
