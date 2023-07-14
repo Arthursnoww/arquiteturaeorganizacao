@@ -1,3 +1,4 @@
+; Correção: 1,0
             .686
             .model  flat, c
             .stack  100h
@@ -9,7 +10,7 @@ in1fmt      byte    "%s", 0
 msg1        byte    "Insira a palavra: ", 0
 msg2        byte    "A string e palindroma.", 0
 msg3        byte    "A string nao e palindroma.", 0
-arraystr    byte    "1234554321 7234554328 abzdeedyba ummaggammu abcdeedcba fghijjihgf ababababab 5432154321 aaaaaaaaaa 1111111111"
+arraystr    byte    "aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa"
 lenght      sdword  10
 found       sdword  0
 temp1       sdword  0
