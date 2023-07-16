@@ -3,11 +3,15 @@
 
 **QUESTÃO-01**
 
+> Correção: 0,5
+
     B)  8
     C)  4
     D)  10
 
 **QUESTÃO-02**
+
+> Correção: 0,3
 
     B)  fld w
         fld x
@@ -26,7 +30,9 @@
         fld d
         fsub
         fstp info
-        
+
+> Correção: Aqui, pela ordem de avaliação, o _i_ e _j_ seria multiplicados primeiro. 
+
     D)  fld k
         fld m
         fld n
