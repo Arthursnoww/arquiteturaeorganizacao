@@ -1,3 +1,4 @@
+; Correção: 0,3. O _l_ deve ser maiúsculo na _string_ de formatação.
           .686
           .model  flat, c
           .stack  100h
