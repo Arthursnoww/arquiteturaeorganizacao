@@ -9,6 +9,7 @@ int main() {
 	fld x
 	fstp y
   }
+  // l deve ser maiúsculo. Funciona para valores menores, mas no limite dá problema.
   printf("\n%s%lf\n\n", "The long double in y is: ", y);
   return 0;
 }

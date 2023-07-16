@@ -1,3 +1,4 @@
+// Correção: 0,3. Veja o long double.
 #include <stdio.h>
 int main() {
   float x, y;
